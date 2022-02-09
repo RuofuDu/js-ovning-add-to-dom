@@ -37,7 +37,7 @@ let shoppingCartContainer = document.getElementById("shopping-cart-container")
 cart.forEach(function (product) {
   // Här är en rad som skriver ut produktens namn i konsollen.
   // Öppna konsollen i webbläsaren (med t.ex. Shift + CTRL + J) för att se utskrifterna.
-  console.log(product.name)
+  console.log(product.price)
 
   // Så här kan man skriva ut en produkts namn i div:en.
   // Det fungerar dock inte som tänkt. Det är bara sista produktens namn som syns i sidan...
