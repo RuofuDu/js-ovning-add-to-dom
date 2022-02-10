@@ -42,5 +42,5 @@ cart.forEach(function (product) {
   // Så här kan man skriva ut en produkts namn i div:en.
   // Det fungerar dock inte som tänkt. Det är bara sista produktens namn som syns i sidan...
   // Det måste du fixa!
-  shoppingCartContainer.innerText = product.name
+  shoppingCartContainer.innerText += product.name
 })
