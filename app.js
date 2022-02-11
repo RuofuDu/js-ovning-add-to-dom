@@ -2,7 +2,7 @@
 //Arrayen representerar en varukorg på en shoppingsajt.
 //Varje objekt i arrayen representerar en produkt.
 const cart = [ // hak-parentes för att definiera en array
-  {
+  { 
     productId: 1,
     productImage: "images/product_xlarge_jordans.jpg",
     name: "Jordan Brand Jordan 5 Retro",
@@ -34,6 +34,7 @@ let shoppingCartContainer = document.getElementById("shopping-cart-container")
   Här är en loop som går igenom alla produkter i arrayen cart.
   Modifiera koden i den anonyma funktionen för att lösa uppgifterna.
 */
+/*
 cart.forEach(function (product) {
   // Här är en rad som skriver ut produktens namn i konsollen.
   // Öppna konsollen i webbläsaren (med t.ex. Shift + CTRL + J) för att se utskrifterna.
@@ -44,3 +45,14 @@ cart.forEach(function (product) {
   // Det måste du fixa!
   shoppingCartContainer.innerText += product.name
 })
+*/
+  
+cart.forEach(function (product) {
+  bild_varde = product.productImage
+  bild = `<img class= "product-image" src = "${bild_varde}" >`
+  shoppingCartContainer.insertAdjacentHTML("beforeend", bild)
+  information = product.name, price, quantity
+  info = `<img class= "shoppingCartContainer" scr = "${information}" >`
+  shoppingCartContainer.insertAdjacentHTML("beforeend", info)
+})
+
